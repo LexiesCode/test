@@ -1,8 +1,7 @@
 'use strict';
-const menu = document.getElementsByClassName('wrapper-dropdown');
+
+const menu = document.getElementsByClassName('wrapper-dropdown')[0];
  
- for (let item of menu) {
-   item.onclick = () => {
-     item.classList.toggle('active');
-   };
- }
+menu.onclick = () => {  
+  menu.classList.toggle('active');
+}

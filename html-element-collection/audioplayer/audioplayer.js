@@ -4,9 +4,9 @@ const controls = audioplayer.getElementsByClassName('controls')[0];
 const btnPlayPause = controls.getElementsByClassName('playstate')[0];
 //const btnPlay = controls.getElementsByClassName('fa-play')[0];
 //const btnPause = controls.getElementsByClassName('fa-pause')[0];
-const btnStop = controls.getElementsByClassName('fa-stop')[0];
-const nextTrack = controls.getElementsByClassName('fa-forward')[0];
-const previousTrack = controls.getElementsByClassName('fa-backward')[0];
+const btnStop = controls.getElementsByClassName('stop')[0];
+const nextTrack = controls.getElementsByClassName('next')[0];
+const previousTrack = controls.getElementsByClassName('back')[0];
 
 const trackList = [
   {
