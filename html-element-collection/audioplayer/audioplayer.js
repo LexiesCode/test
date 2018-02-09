@@ -2,8 +2,6 @@ const audioplayer = document.getElementsByClassName('mediaplayer')[0];
 const audio = audioplayer.getElementsByTagName('audio')[0];
 const controls = audioplayer.getElementsByClassName('controls')[0];
 const btnPlayPause = controls.getElementsByClassName('playstate')[0];
-//const btnPlay = controls.getElementsByClassName('fa-play')[0];
-//const btnPause = controls.getElementsByClassName('fa-pause')[0];
 const btnStop = controls.getElementsByClassName('stop')[0];
 const nextTrack = controls.getElementsByClassName('next')[0];
 const previousTrack = controls.getElementsByClassName('back')[0];
@@ -47,16 +45,6 @@ btnPlayPause.onclick = () => {
   }
   audioplayer.classList.toggle('play');
 }
-
-/*btnPlay.onclick = () => {
-  audio.play();
-  audioplayer.classList.toggle('play');
-};
-btnPause.onclick = () => {
-  audio.pause();
-  audioplayer.classList.toggle('play');
-};
-*/
 
 btnStop.onclick = () => {
   audio.pause();
